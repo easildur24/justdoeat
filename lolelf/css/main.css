@@ -1,0 +1,191 @@
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background .dot {
+    position: absolute;
+    background-image: url('../img/dot.png');
+    width: 100%;
+    height: 100%;
+}
+
+.background video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header {
+    width: 800px;
+    height: 50px;
+    margin: auto;
+    color: #a0a064;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+
+.main {
+    opacity: 0.95;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    height: auto;
+    position: relative;
+}
+
+.main_img {
+    width: 100%;
+}
+
+.champions {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    white-space:nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.champion_img {
+    height: 50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    position: relative;
+}
+
+.champion_img:hover {
+    opacity: 0.5;
+}
+
+.champion_slot {
+    height: 50px;
+    width: 50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    position: absolute;
+    background-color: white;
+    opacity: 0.7;
+    border: 1px black outset;
+}
+
+.champion_slot:hover {
+    border: 2px white outset;
+}
+
+::-webkit-scrollbar {
+      width: 0;
+}
+
+::-webkit-scrollbar
+{
+  height: 8px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: #a0a064;
+}
+
+.champion_stats {
+    border-radius: 25px;
+    border: 2px solid #8AC007;
+    color: #8AC007;
+    padding: 20px;
+    background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg);
+    background-size: 540px 350px;
+    background-repeat: no-repeat;
+}
+
+.champion_stats_img {
+    height: 100px;
+    -moz-border-radius:100px;
+    -webkit-border-radius:100px;
+}
+
+.champion_stats_img,
+.champion_stats_info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.champion_stats_info {
+    margin-left: 20px;
+}
+
+.champion_game_stats {
+    padding-left: 20px;
+}
+
+.champion_game_stats_item {
+    list-style: none;
+    padding-top: 5px;
+}
+
+#role_chart {
+    display: block;
+}
+
+#champion_slot0 {
+    left: 30%;
+    top: 19%;
+}
+
+#champion_stats0 {
+
+}
+
+#champion_slot1 {
+    left: 51%;
+    top: 46%;
+}
+
+#champion_slot2 {
+    top: 55%;
+    left: 64%;
+}
+
+#champion_slot3 {
+    top: 70%;
+    left: 70%;
+}
+
+#champion_slot4 {
+    top: 76%;
+    left: 69%;
+}
+
+#champion_slot5 {
+    top: 27%;
+    left: 27%;
+}
+
+#champion_slot6 {
+    top: 55%;
+    left: 45%;
+}
+
+#champion_slot7 {
+    top: 81%;
+    left: 52%;
+}
+
+#champion_slot8 {
+    top: 87%;
+    left: 62%;
+}
+
+#champion_slot9 {
+    top: 83%;
+    left: 65%;
+}
+
