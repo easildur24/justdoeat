@@ -16,7 +16,7 @@ abstract class lolelf_dbobj
     public $id_field;
 
     public function get_next_insert_id($db){
-        $query = "SELECT Auto_increment FROM information_schema.tables WHERE table_name='{$this->table_name}' and table_schema='lolelf'";
+        $query = "SELECT Auto_increment FROM information_schema.tables WHERE table_name='{$this->table_name}' and table_schema='lolelf_lan'";
         $result = $db->query($query);
         $next_id = (int)$result->fetch_assoc()['Auto_increment'];
         return $next_id;

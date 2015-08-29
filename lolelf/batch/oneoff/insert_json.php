@@ -75,8 +75,8 @@
     }
     
     $db = new db_base();
-    #insert_champions($db);
-    read_matches('../../data/NA.json');
+    //insert_champions($db);
+    read_matches('../../data/LAN.json.data');
     
     
 ?>

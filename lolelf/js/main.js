@@ -71,14 +71,12 @@ $(document).ready(function () {
 	    activeClass: "ui-state-hover",
 	    hoverClass: "ui-state-active",
 	    drop: function( event, ui ) {
-		$(this).empty();
-		var $item = ui.draggable.clone();
-		$(this).append($item);
+		$(this).attr("src", ui.draggable.attr("src"));
             }
         });
 	
 	$(function() {
-		$( "#champion_stats0" ).dialog({
+		$( "#champion_stats" ).dialog({
 		  autoOpen: false,
 		  closeOnEscape: true,
 		  width: 540,
@@ -93,10 +91,14 @@ $(document).ready(function () {
 		  }
 		});
  
-		$( "#champion_slot0" ).click(function() {
+		$( ".champion_slot" ).click(function() {
 			
-			$( "#champion_stats0" ).dialog( "open" );
+			$( "#champion_stats" ).dialog( "open" );
 			draw_role_chart(0.1, 0.2, 0.3, 0.39, 0.01);
+			$(".ui-dialog").blur(function() {
+				$(this).remove();
+				$( "#champion_stats" ).hide();
+			});
 		});
 	
 	});
